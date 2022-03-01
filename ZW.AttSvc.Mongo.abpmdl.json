@@ -1,0 +1,79 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {},
+      "host": {}
+    }
+  },
+  "packages": {
+    "ZW.AttSvc.Mongo.Domain.Shared": {
+      "path": "src/ZW.AttSvc.Mongo.Domain.Shared/ZW.AttSvc.Mongo.Domain.Shared.abppkg.json",
+      "folder": "src"
+    },
+    "ZW.AttSvc.Mongo.Domain": {
+      "path": "src/ZW.AttSvc.Mongo.Domain/ZW.AttSvc.Mongo.Domain.abppkg.json",
+      "folder": "src"
+    },
+    "ZW.AttSvc.Mongo.Application.Contracts": {
+      "path": "src/ZW.AttSvc.Mongo.Application.Contracts/ZW.AttSvc.Mongo.Application.Contracts.abppkg.json",
+      "folder": "src"
+    },
+    "ZW.AttSvc.Mongo.Application": {
+      "path": "src/ZW.AttSvc.Mongo.Application/ZW.AttSvc.Mongo.Application.abppkg.json",
+      "folder": "src"
+    },
+    "ZW.AttSvc.Mongo.EntityFrameworkCore": {
+      "path": "src/ZW.AttSvc.Mongo.EntityFrameworkCore/ZW.AttSvc.Mongo.EntityFrameworkCore.abppkg.json",
+      "folder": "src"
+    },
+    "ZW.AttSvc.Mongo.MongoDB": {
+      "path": "src/ZW.AttSvc.Mongo.MongoDB/ZW.AttSvc.Mongo.MongoDB.abppkg.json",
+      "folder": "src"
+    },
+    "ZW.AttSvc.Mongo.HttpApi": {
+      "path": "src/ZW.AttSvc.Mongo.HttpApi/ZW.AttSvc.Mongo.HttpApi.abppkg.json",
+      "folder": "src"
+    },
+    "ZW.AttSvc.Mongo.HttpApi.Client": {
+      "path": "src/ZW.AttSvc.Mongo.HttpApi.Client/ZW.AttSvc.Mongo.HttpApi.Client.abppkg.json",
+      "folder": "src"
+    },
+    "ZW.AttSvc.Mongo.TestBase": {
+      "path": "test/ZW.AttSvc.Mongo.TestBase/ZW.AttSvc.Mongo.TestBase.abppkg.json",
+      "folder": "test"
+    },
+    "ZW.AttSvc.Mongo.EntityFrameworkCore.Tests": {
+      "path": "test/ZW.AttSvc.Mongo.EntityFrameworkCore.Tests/ZW.AttSvc.Mongo.EntityFrameworkCore.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "ZW.AttSvc.Mongo.MongoDB.Tests": {
+      "path": "test/ZW.AttSvc.Mongo.MongoDB.Tests/ZW.AttSvc.Mongo.MongoDB.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "ZW.AttSvc.Mongo.Domain.Tests": {
+      "path": "test/ZW.AttSvc.Mongo.Domain.Tests/ZW.AttSvc.Mongo.Domain.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "ZW.AttSvc.Mongo.Application.Tests": {
+      "path": "test/ZW.AttSvc.Mongo.Application.Tests/ZW.AttSvc.Mongo.Application.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "ZW.AttSvc.Mongo.HttpApi.Host": {
+      "path": "host/ZW.AttSvc.Mongo.HttpApi.Host/ZW.AttSvc.Mongo.HttpApi.Host.abppkg.json",
+      "folder": "host"
+    },
+    "ZW.AttSvc.Mongo.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/ZW.AttSvc.Mongo.HttpApi.Client.ConsoleTestApp/ZW.AttSvc.Mongo.HttpApi.Client.ConsoleTestApp.abppkg.json",
+      "folder": "test"
+    },
+    "ZW.AttSvc.Mongo.IdentityServer": {
+      "path": "host/ZW.AttSvc.Mongo.IdentityServer/ZW.AttSvc.Mongo.IdentityServer.abppkg.json",
+      "folder": "host"
+    },
+    "ZW.AttSvc.Mongo.Host.Shared": {
+      "path": "host/ZW.AttSvc.Mongo.Host.Shared/ZW.AttSvc.Mongo.Host.Shared.abppkg.json",
+      "folder": "host"
+    }
+  }
+}
