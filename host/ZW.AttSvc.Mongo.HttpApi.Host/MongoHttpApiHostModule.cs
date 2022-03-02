@@ -27,6 +27,8 @@ using Volo.Abp.SettingManagement.EntityFrameworkCore;
 using Volo.Abp.Swashbuckle;
 using Volo.Abp.TenantManagement.EntityFrameworkCore;
 using Volo.Abp.VirtualFileSystem;
+using ZW.Shared.Hosting.Microservices;
+using Volo.Abp.AspNetCore.Mvc;
 
 namespace ZW.AttSvc.Mongo;
 
@@ -36,12 +38,10 @@ namespace ZW.AttSvc.Mongo;
     typeof(AbpAspNetCoreMvcUiMultiTenancyModule),
     typeof(AbpAutofacModule),
     typeof(AbpCachingStackExchangeRedisModule),
-    typeof(AbpEntityFrameworkCoreSqlServerModule),
-    typeof(AbpAuditLoggingEntityFrameworkCoreModule),
-    typeof(AbpPermissionManagementEntityFrameworkCoreModule),
     typeof(AbpTenantManagementEntityFrameworkCoreModule),
     typeof(AbpAspNetCoreSerilogModule),
-    typeof(AbpSwashbuckleModule)
+    typeof(AbpSwashbuckleModule),
+    typeof(ZWSharedHostingMicroservicesModule)
     )]
 public class MongoHttpApiHostModule : AbpModule
 {
@@ -51,10 +51,10 @@ public class MongoHttpApiHostModule : AbpModule
         var hostingEnvironment = context.Services.GetHostingEnvironment();
         var configuration = context.Services.GetConfiguration();
 
-        Configure<AbpDbContextOptions>(options =>
-        {
-            options.UseSqlServer();
-        });
+        //Configure<AbpDbContextOptions>(options =>
+        //{
+        //    options.UseSqlServer();
+        //});
 
         Configure<AbpMultiTenancyOptions>(options =>
         {
@@ -84,6 +84,15 @@ public class MongoHttpApiHostModule : AbpModule
                 options.DocInclusionPredicate((docName, description) => true);
                 options.CustomSchemaIds(type => type.FullName);
             });
+
+        Configure<AbpAspNetCoreMvcOptions>(options =>
+        {
+            options.ConventionalControllers.Create(typeof(MongoAppService).Assembly, opts =>
+            {
+                opts.RootPath = "mongo";
+                opts.RemoteServiceName = "Mongo";
+            });
+        });
 
         Configure<AbpLocalizationOptions>(options =>
         {
