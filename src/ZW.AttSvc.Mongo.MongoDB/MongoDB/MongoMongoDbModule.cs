@@ -14,9 +14,10 @@ public class MongoMongoDbModule : AbpModule
     {
         context.Services.AddMongoDbContext<MongoMongoDbContext>(options =>
         {
-                /* Add custom repositories here. Example:
-                 * options.AddRepository<Question, MongoQuestionRepository>();
-                 */
+            /* Add custom repositories here. Example:
+             * options.AddRepository<Question, MongoQuestionRepository>();
+             */
+            options.AddDefaultRepositories();
         });
     }
 }

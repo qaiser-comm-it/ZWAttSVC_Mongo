@@ -87,11 +87,13 @@ public class MongoHttpApiHostModule : AbpModule
 
         Configure<AbpAspNetCoreMvcOptions>(options =>
         {
-            options.ConventionalControllers.Create(typeof(MongoAppService).Assembly, opts =>
-            {
-                opts.RootPath = "mongo";
-                opts.RemoteServiceName = "Mongo";
-            });
+            options.ConventionalControllers.Create(typeof(MongoApplicationModule).Assembly);
+            //options.ConventionalControllers
+            //.Create(typeof(MongoAppService).Assembly, opts =>
+            //{
+            //    opts.RootPath = "mongo";
+            //    opts.RemoteServiceName = "Mongo";
+            //});
         });
 
         Configure<AbpLocalizationOptions>(options =>
