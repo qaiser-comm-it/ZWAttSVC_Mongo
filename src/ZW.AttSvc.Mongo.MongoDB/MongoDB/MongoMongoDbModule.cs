@@ -17,7 +17,6 @@ public class MongoMongoDbModule : AbpModule
             /* Add custom repositories here. Example:
              * options.AddRepository<Question, MongoQuestionRepository>();
              */
-            options.AddDefaultRepositories();
         });
     }
 }

@@ -29,6 +29,7 @@ using Volo.Abp.TenantManagement.EntityFrameworkCore;
 using Volo.Abp.VirtualFileSystem;
 using ZW.Shared.Hosting.Microservices;
 using Volo.Abp.AspNetCore.Mvc;
+using ZW.AttSvc.Mongo.MongoDB;
 
 namespace ZW.AttSvc.Mongo;
 
@@ -38,7 +39,7 @@ namespace ZW.AttSvc.Mongo;
     typeof(AbpAspNetCoreMvcUiMultiTenancyModule),
     typeof(AbpAutofacModule),
     typeof(AbpCachingStackExchangeRedisModule),
-    typeof(AbpTenantManagementEntityFrameworkCoreModule),
+    typeof(MongoMongoDbModule),
     typeof(AbpAspNetCoreSerilogModule),
     typeof(AbpSwashbuckleModule),
     typeof(ZWSharedHostingMicroservicesModule)

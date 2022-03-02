@@ -32,6 +32,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\src\ZW.AttSvc.Mongo.HttpApi\ZW.AttSvc.Mongo.HttpApi.csproj" />
     <ProjectReference Include="..\..\src\ZW.AttSvc.Mongo.Application\ZW.AttSvc.Mongo.Application.csproj" />
+    <ProjectReference Include="..\..\src\ZW.AttSvc.Mongo.MongoDB\ZW.AttSvc.Mongo.MongoDB.csproj" />
   </ItemGroup>
 
   <ItemGroup>
